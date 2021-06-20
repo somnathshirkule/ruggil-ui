@@ -15,7 +15,7 @@ const routes: Routes = [
     component: ChatComponent
   },
   {
-    path : "videoConferncing", 
+    path : "meet", 
     component: VideoComponent
   }
 ];

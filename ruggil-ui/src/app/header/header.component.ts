@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   CurrentPage: String = 'home';
+  home = 'home';
+  chat = 'chat';
+  meet = 'meet'
   constructor() { }
 
   ngOnInit() {

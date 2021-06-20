@@ -8,11 +8,16 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  chatUserId;
   constructor(private router: Router){
     console.log('Called URL', router.url);
     }
 
   ngOnInit() {
+  }
+
+  clicked(){
+    console.log(this.chatUserId);
   }
 
 }
