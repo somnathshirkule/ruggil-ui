@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ChatComponent } from './chat/chat.component';
 import { VideoComponent } from './video/video.component';
 import { FooterComponent } from './footer/footer.component';
+import { NgModel } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ChatComponent,
     VideoComponent,
-    FooterComponent
+    FooterComponent,
+    NgModel
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,31 @@
-<p>Home working!</p>
+<div class="jumbotron vertical-center">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <h1>Secure video conferencing for everyone!</h1>
+            </div><br><br>
+
+            <div class="container">
+                <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6 center-block">
+                 <p><button type="button" class="btn btn-primary medium-element">Start instant meeting.</button> <br><br>
+                    <input type="text" class="form-control medium-element pull-left" id="usr" placeholder="Enter meeting code."> &nbsp; <button type="button" class="btn btn-default medium-element">Join</button></p>
+                </div>
+            </div>
+                
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <h1>Chat securely for sure!</h1>
+            </div><br><br>
+
+            <div class="container">
+                <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6 center-block">
+                 <p><button type="button" (click)="clicked()" name="startChatBtn" class="btn btn-success medium-element">Click to start.</button> <br><br>
+                    <input type="text" [(ngModel)]="chatUserId" name="userId" class="form-control medium-element pull-left" id="usr" placeholder="Enter User ID.">&nbsp; <button *ngIf="chatUserId != '' || chatUserId != undefined" type="button" class="btn btn-default medium-element">Join</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
