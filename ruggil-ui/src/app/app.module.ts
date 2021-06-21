@@ -9,6 +9,9 @@ import { ChatComponent } from './chat/chat.component';
 import { VideoComponent } from './video/video.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgModel } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { NgSelectConfig } from '@ng-select/ng-select'; 
+import { ɵs } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,10 @@ import { NgModel } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgSelectModule
   ],
-  providers: [],
+  providers: [NgSelectConfig, ɵs],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

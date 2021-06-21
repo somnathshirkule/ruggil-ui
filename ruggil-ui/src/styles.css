@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+.component{
+    padding: 45px;
+}
+.medium-element{
+    width: auto;
+    padding: 10px;
+    height: auto;
+}
+.long-element{
+    padding: 10px;
+    height: auto;
+}
+.container {
+    padding: 55px;;
+    margin-top: 10px;
+    display: table;
+    height: 100%;
+}
+.row {
+    min-width: 960px;
+    display: table-cell;
+    height: 100%;
+    vertical-align:middle;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: black;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+ }
+ .chat-header{
+     border-radius: 5px;
+     padding: 5px;
+     font-size: 5px;
+ }
+
