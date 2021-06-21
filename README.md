@@ -1,2 +1,2 @@
 # Ruggil
-Ruggil - Video Calling &amp; Sharing
+Ruggil - Video Calling &amp; chatting
