@@ -1,1 +1,140 @@
-<p>chat works!</p>
+<div class="jumbotron vertical-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <!-- <div class="form-group">
+                    <div style="border-radius: 5px; padding: 10px;" class="input-group text-center bg-success">
+                      <h4>Chats</h4>
+                      <span class="input-group-btn">
+                          <button class="button long-element" style="color: red;">sam</button>
+                      </span>
+                    </div>
+                   </div> -->
+                <ul class="list-group">
+                    <a class="list-group-item d-flex justify-content-between align-items-center display-4">
+                      Chats
+                        <span class="badge badge-primary badge-pill bg-primary">
+                          <button data-toggle="modal" data-target="#newChat" title="New Chat" type="button" class="bg-primary" style="background: none; border: none;">&#x2B;</button>
+                        </span>
+                    </a>
+                </ul>
+                  <ul class="list-group">
+                    <a class="list-group-item d-flex justify-content-between align-items-center">
+                      somnath
+                      <span class="badge badge-primary badge-pill">12</span>
+                    </a>
+                    <a class="list-group-item d-flex justify-content-between align-items-center">
+                      Nilesh
+                      <span class="badge badge-primary badge-pill">50</span>
+                    </a>
+                    <a class="list-group-item d-flex justify-content-between align-items-center">
+                      Vishal
+                      <span class="badge badge-primary badge-pill">99</span>
+                    </a>
+                    <a class="list-group-item d-flex justify-content-between align-items-center">
+                        Ganesh
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                      <a class="list-group-item d-flex justify-content-between align-items-center">
+                        Bhushan
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                      <a class="list-group-item d-flex justify-content-between align-items-center">
+                        Mahesh
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                      <a class="list-group-item d-flex justify-content-between align-items-center">
+                        Rudra
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                      <a class="list-group-item d-flex justify-content-between align-items-center">
+                        Roshan
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                      <a class="list-group-item d-flex justify-content-between align-items-center">
+                        MS Dhoni
+                        <span class="badge badge-primary badge-pill">99</span>
+                      </a>
+                  </ul>
+            </div>
+            <div class="col-xs-6 make-border">
+                <div class="text-center chat-header bg-primary">
+                    <p>Somnath <br> somnath.shirkule@gmail.com</p>
+                </div>
+                <div class="container">
+                    <!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span>
+                  </div>
+                  
+                  <div class="container darker">
+                    <!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
+                    <p>Hey! I'm fine. Thanks for asking!</p>
+                    <span class="time-left">11:01</span>
+                  </div>
+                  
+                  <div class="container">
+                    <!-- <img src="/w3images/bandmember.jpg" alt="Avatar"> -->
+                    <p>Sweet! So, what do you wanna do today?</p>
+                    <span class="time-right">11:02</span>
+                  </div>
+                  
+                  <div class="container darker">
+                    <!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"> -->
+                    <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                    <span class="time-left">11:05</span>
+                  </div>
+                  <br><br>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input class="form-control width100 long-element" type="text" placeholder="Type message here">
+                      <span class="input-group-btn">
+                          <button class="btn btn-success long-element">Send</button>
+                      </span>
+                    </div>
+                   </div>
+
+                <!-- <h2>Login Or Sign Up!</h2><br>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control long-element" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="email">Password:</label>
+                    <input type="email" class="form-control long-element" id="email">
+                </div>
+                <button type="button" class="btn btn-success medium-element">Login</button> -->
+    
+            </div>
+        </div>
+    </div>
+</div>
+<div #newChat id="newChat" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">New Chat</h2>
+        </div>
+        <div class="modal-body">
+            <br>
+        <div class="form-group">
+            <ng-select *ngIf="users.length > 0"
+                [items]="users" 
+                bindLabel="username" 
+                bindValue="username" 
+                placeholder="Search User"
+                [(ngModel)]="selectedUser">
+            </ng-select>
+          </div>
+          <br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success medium-element pull-left">Start Chat</button>
+          <button type="button" class="btn btn-default medium-element" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+  
+    

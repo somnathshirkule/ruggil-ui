@@ -14,7 +14,21 @@
             </div>
                 
         </div>
-        <div class="col-xs-6">
+        <br><br>
+        <div class="col-xs-6" style="border: 1px solid #ccc; border-radius: 5px; padding: 20px;">
+            <h2>Login to Ruggil!</h2><br>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control long-element" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Password:</label>
+                <input type="email" class="form-control long-element" id="email">
+            </div>
+            <button type="button" class="btn btn-success medium-element">Login</button>
+
+        </div>
+        <!-- <div class="col-xs-6">  //if user logged in
             <div class="form-group">
                 <h1>Chat securely for sure!</h1>
             </div><br><br>
@@ -22,10 +36,10 @@
             <div class="container">
                 <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6 center-block">
                  <p><button type="button" (click)="clicked()" name="startChatBtn" class="btn btn-success medium-element">Click to start.</button> <br><br>
-                    <input type="text" [(ngModel)]="chatUserId" name="userId" class="form-control medium-element pull-left" id="usr" placeholder="Enter User ID.">&nbsp; <button *ngIf="chatUserId != '' || chatUserId != undefined" type="button" class="btn btn-default medium-element">Join</button></p>
+                    <input type="text" [(ngModel)]="chatUserId" class="form-control medium-element pull-left" id="usr" placeholder="Enter User ID.">&nbsp; <button *ngIf="chatUserId != '' || chatUserId != undefined" type="button" class="btn btn-default medium-element">Join</button></p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </div>

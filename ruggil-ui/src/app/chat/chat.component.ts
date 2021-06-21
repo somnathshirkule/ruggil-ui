@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit {
-
+  selectedUser: any;
+  users = [
+  {
+    "username": "somnath"
+  },
+  {
+    "username": "Ajay"
+  },
+  {
+    "username": "Bhushan"
+  },
+  {
+    "username": "Kunal"
+  }
+];
   constructor() { }
 
   ngOnInit() {
